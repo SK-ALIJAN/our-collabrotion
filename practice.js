@@ -4,7 +4,8 @@ let c=0;
 
 let i=0;
 while(i<num){
-  if(num%i!==0) c++
+  if(num%i==0)
+  c++;
   i++;
 }
 (c==2)?(console.log("Yes")):(console.log("No"));
@@ -14,7 +15,7 @@ while(i<num){
 
 let word="madam";
 let str="";
-for(let i=word.length;i<0;i++){
+for(let i=word.length-1;i>=0;i--){
 str+=word[i]
 }
 (word==str)?(console.log("Yes")):(console.log("No"));
